@@ -108,6 +108,7 @@ img{
 }
 .details h2:hover{
     color: var(--primary1);
+    cursor: pointer;
 }
 .details p{
 margin:1rem;
