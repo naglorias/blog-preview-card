@@ -11,6 +11,8 @@
     src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
 }
 
+
+
 /**** Colors ******/
 :root {
     --primary1: hsl(47, 88%, 63%);
@@ -35,7 +37,6 @@ body {
     height: 100vh;
 }
 
-
 /* Card styling */
 .container {
     width: 100%;
@@ -45,7 +46,6 @@ body {
     flex-direction: column;
     gap: 1.1rem;
 }
-
 .card {
     width: 27%;
     height: 70%;
@@ -55,9 +55,7 @@ body {
     -webkit-box-shadow: 7px 10px 0px 5px rgba(0, 0, 0, 0.88);
     -moz-box-shadow: 7px 10px 0px 5px rgba(0, 0, 0, 0.88);
     box-shadow: 7px 10px 0px 5px rgba(0, 0, 0, 0.88);
-
 }
-
 .card-flex {
     width: 100%;
     height: 100%;
@@ -83,6 +81,7 @@ img{
     object-fit: cover;
     border-radius: 15px;
 }
+
 .details {
     flex: 3;
 }
@@ -100,8 +99,8 @@ img{
  color:var(--neutral3);
  margin:.77rem 1rem;
  font-size: .88rem;
-
 }
+
 .details h2{
     margin-left: 1rem;
     font-size: 1.4rem;
@@ -136,39 +135,76 @@ line-height: 1.5;
     font-size: .88rem;
     font-weight: 800;
 }
-/*******Media Queries*************/
-@media screen  and (max-width:1200px)  {
-    .card {
-    width: 35%;
-    height: 85%;
-    }
-    .details p{
-        width: 300px;
-        font-size: 1rem;
+@media screen and (min-width: 375px) {
+    .card{
+        width: 57%;
     }
     
-}
-@media screen  and (max-width:900px) and (min-width:601px) {
-     .card {
-    width: 45%;
-    height: 77%;
+    .details h2{
+        font-size: .89rem;
     }
+   
     .details p{
-        width: 280px;
-        font-size: .88rem;
+   font-size: .80rem;
+   width:240px;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width: 576px) {
+    .card{
+        width: 45.6%;
+        height: 73%;
+    }
+    .details h2{
+        font-size: 1rem;
+    }
+   
+    .details p{
+   font-size: .84rem;
+   width:280px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
     .card {
-        width: 60%;
-        height: 80%;
-        margin-top: 3rem;
+        width: 40%;
+        height: 74%;
+        
     }
-
-
-.details p{
-font-size: .87em;
-width: 325px;
-}
-}
+    .details h2{
+        font-size: 1.1rem;
+    }
+   
+    .details p{
+   font-size: .91rem;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .card{
+        width: 35%;
+        height: 73%;
+    }
+    .details h2{
+        font-size: 1.2rem;
+        
+    }
+   
+   
+  }
+  
+  @media screen and (min-width: 1200px) {
+     .card {
+        width: 27%;
+        height: 70%;
+    } 
+    .details h2{
+        font-size: 1.3rem;
+    }
+   
+     .details p{
+    font-size: 1rem;
+    width: 340px;
+    } 
+   
+  }
